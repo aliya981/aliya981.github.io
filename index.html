@@ -64,7 +64,11 @@ description: "微信/百度/贴吧/ 号【购 g.h17b.cc买】抖音/快手/知�
             </li>
             {% endfor %}
         </ul>
-        <p><a href="/archive.html">查看所有文章 →</a></p>
+<!-- 将原来的 -->
+<a href="/archive.html">查看所有文章 →</a>
+
+<!-- 改为（推荐Jekyll方式） -->
+<a href="{{ '/archive' | relative_url }}">查看所有文章 →</a>
     </section>
 
     <footer>
