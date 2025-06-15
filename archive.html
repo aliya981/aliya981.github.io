@@ -8,12 +8,11 @@ title: "文章归档"
         {% for post in site.posts %}
         <li>
             <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-            {% if post.tags %}
-            <div class="tags">
-                Tags: {{ post.tags | join: ", " }}
-            </div>
-            {% endif %}
+            <h3>
+                <a href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                </a>
+            </h3>
         </li>
         {% endfor %}
     </ul>
