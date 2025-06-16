@@ -1,22 +1,14 @@
-# 基础配置
-title: "阿利亚的技术博客"
-description: "微信/百度/贴吧/ 号【购 g.h17b.cc买】抖音/快手/知乎/QQ/58/头条/支付宝/淘宝/千牛闲鱼/拼多多商店/
-/Facebook/whatsapp/twitter推特/谷歌邮箱Gmail/tiktok运营技术伦理探究。"
-url: "https://aliya981.github.io"
-
-# 构建设置
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
-timezone: Asia/Shanghai
-future: true  # 显示未来文章（调试用）
-
-# 插件
+# 启用关键插件
 plugins:
   - jekyll-feed
   - jekyll-paginate
 
+# 强制重建配置
+timezone: Asia/Shanghai
+future: true  # 显示未来文章（调试用）
+permalink: /:year/:month/:day/:title/
+
 # 排除无关文件
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - README.md
+  - LICENSE
