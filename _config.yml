@@ -2,3 +2,5 @@ collections:
   posts:
     output: true
 repository: "aliya981/aliya981.github.io"
+title: 你的博客名
+description: 博客描述
