@@ -1,14 +1,9 @@
-# 启用关键插件
 plugins:
   - jekyll-feed
   - jekyll-paginate
 
-# 强制重建配置
-timezone: Asia/Shanghai
-future: true  # 显示未来文章（调试用）
-permalink: /:year/:month/:day/:title/
+include:
+  - _posts
 
-# 排除无关文件
 exclude:
   - README.md
-  - LICENSE
