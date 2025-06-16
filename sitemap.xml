@@ -7,25 +7,15 @@ layout: null
   <url>
     <loc>{{ site.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <!-- 文章页 -->
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
       <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
     </url>
   {% endfor %}
-  <!-- 其他页面（如about、archives等） -->
-  {% for page in site.pages %}
-    {% unless page.url contains '404.html' or page.url contains '.xml' %}
-    <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
-      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      <priority>0.6</priority>
+</urlset>{% endraw %}
     </url>
     {% endunless %}
   {% endfor %}
