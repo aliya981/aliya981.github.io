@@ -9,3 +9,5 @@ plugins:
 # 示例（替换 YOUR_VERIFICATION_CODE）
 meta_tags:
   verification: <meta name="msvalidate.01" content="YOUR_VERIFICATION_CODE" />
+  plugins:
+  - jekyll-sitemap  # 自动生成兼容Google和Bing的sitemap.xml
