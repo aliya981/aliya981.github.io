@@ -11,3 +11,7 @@ meta_tags:
   verification: <meta name="msvalidate.01" content="YOUR_VERIFICATION_CODE" />
   plugins:
   - jekyll-sitemap  # 自动生成兼容Google和Bing的sitemap.xml
+meta_tags:
+  google-site-verification: "你的Google验证码"
+  meta_tags:
+  msvalidate.01: "你的Bing验证码"
