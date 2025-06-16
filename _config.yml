@@ -1,5 +1,8 @@
-title: "我的博客"
+# 必须配置
 url: "https://aliya981.github.io"
-repository: "aliya981/aliya981.github.io"
+baseurl: ""  # 如果是项目站点，保持为空
+
+# 插件白名单（GitHub Pages仅支持这些）
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
