@@ -1,9 +1,1 @@
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-
-include:
-  - _posts
-
-exclude:
-  - README.md
+theme: minima
