@@ -1,4 +1,5 @@
-title: "你的博客名"
-description: "博客描述"
-url: "https://aliya981.github.io"  # 你的 GitHub Pages URL
+title: "我的博客"
+url: "https://aliya981.github.io"
 repository: "aliya981/aliya981.github.io"
+plugins:
+  - jekyll-feed
