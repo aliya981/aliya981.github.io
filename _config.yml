@@ -1,1 +1,5 @@
-theme: minima
+title: "阿利亚的技术博客"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+include: ["_posts"]
