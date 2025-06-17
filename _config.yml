@@ -1,14 +1,49 @@
 # 基础配置
 url: "https://aliya981.github.io"
 baseurl: ""
+title: "阿利亚的技术博客"
+description: "分享运营、GitHub技巧与科技伦理思考"
+author: "aliya981"
 
 # 插件配置（GitHub Pages 兼容）
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap  # 自动生成 sitemap.xml
+  - jekyll-sitemap
 
-# 搜索引擎验证（合并到一个 meta_tags 块）
+# 默认配置
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# 搜索引擎验证
 meta_tags:
-  google-site-verification: "你的Google验证码（仅数字部分）"  # 示例：AbCdE12345
-  msvalidate.01: "你的Bing验证码（完整字符串）"             # 示例：ABCDEF1234567890ABCDEF1234567890
+  google-site-verification: "YutoUnqDeeG665BQdq1eXjcjTn0kBR1Kgea4S4nbtdg"
+  msvalidate.01: "7BE6EBA07CFE1F875A642F103A710464"
+
+# Sitemap配置
+sitemap:
+  # 包含的文件类型
+  filetypes:
+    - html
+    - xml
+    - pdf
+  # 排除的文件/目录
+  exclude:
+    - "/404.html"
+    - "/assets/"
+    - "/images/"
+  # 修改频率
+  changefreq: "weekly"
+  # 优先级
+  priority: 0.8
+
+# 社交媒体链接（可选配置）
+social:
+  wechat: "g.h17b.cc"
+  github: "aliya981"
+  twitter: "#"
+  facebook: "#"
+  whatsapp: "#"
